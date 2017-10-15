@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">PokemonSelection</layout>
+        <layout order="2">Battle</layout>
+        <layout order="4">SplashScreen</layout>
+        <event-sheet order="1">Selection_sheet</event-sheet>
+        <event-sheet active="1" order="3">Battle_sheet</event-sheet>
+        <event-sheet order="5">GenFunc_sheet</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1">
+        <family expanded="1" name="PokemonFamily" />
+        <family expanded="0" name="Projectile" />
+        <family expanded="0" name="Fade" />
+        <family expanded="0" name="AttackSprites" />
+        <family expanded="0" name="CreditsFamily" />
+        <family expanded="0" name="Controls_Variable" />
+    </families-expanded>
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="0" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="0" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/bg_selection/" />
+        <folder expanded="1" path="animation-folder/p1pick_cell/" />
+        <folder expanded="1" path="animation-folder/p2pick_cell/" />
+        <folder expanded="1" path="animation-folder/p1ban_cell/" />
+        <folder expanded="1" path="animation-folder/p2ban_cell/" />
+        <folder expanded="1" path="animation-folder/pokemon/" />
+        <folder expanded="1" path="animation-folder/bg_menu/" />
+        <folder expanded="1" path="animation-folder/info/" />
+        <folder expanded="1" path="animation-folder/button_color/" />
+        <folder expanded="1" path="animation-folder/bg_credits/" />
+        <folder expanded="1" path="animation-folder/icon_exit/" />
+        <folder expanded="1" path="animation-folder/icon_main/" />
+        <folder expanded="1" path="animation-folder/bg_battle/" />
+        <folder expanded="1" path="animation-folder/p1_picks/" />
+        <folder expanded="1" path="animation-folder/p2_picks/" />
+        <folder expanded="1" path="animation-folder/p_ban/" />
+        <folder expanded="1" path="animation-folder/p1container/" />
+        <folder expanded="1" path="animation-folder/p2container/" />
+        <folder expanded="1" path="animation-folder/limit/" />
+        <folder expanded="1" path="animation-folder/p1_initpos/" />
+        <folder expanded="1" path="animation-folder/p2_initpos/" />
+        <folder expanded="1" path="animation-folder/Arcanine/" />
+        <folder expanded="1" path="animation-folder/Charizard/" />
+        <folder expanded="1" path="animation-folder/Charizard_LQB/" />
+        <folder expanded="1" path="animation-folder/Charizard_CCB/" />
+        <folder expanded="1" path="animation-folder/Gyarados_LQB/" />
+        <folder expanded="1" path="animation-folder/Gyarados_LCB/" />
+        <folder expanded="1" path="animation-folder/Arcanine_LQB/" />
+        <folder expanded="1" path="animation-folder/Arcanine_LCB/" />
+        <folder expanded="1" path="animation-folder/Clefable_LCB/" />
+        <folder expanded="1" path="animation-folder/Gyarados_CCB/" />
+        <folder expanded="1" path="animation-folder/Gyarados_CQB/" />
+        <folder expanded="1" path="animation-folder/Raichu_LQB/" />
+        <folder expanded="1" path="animation-folder/Hypno_LQB/" />
+        <folder expanded="1" path="animation-folder/Golduck_LCB/" />
+        <folder expanded="1" path="animation-folder/Vaporeon_LQB/" />
+        <folder expanded="1" path="animation-folder/Dewgong/" />
+        <folder expanded="1" path="animation-folder/Electabuzz/" />
+        <folder expanded="1" path="animation-folder/Golduck/" />
+        <folder expanded="1" path="animation-folder/Gyarados/" />
+        <folder expanded="1" path="animation-folder/Hypno/" />
+        <folder expanded="1" path="animation-folder/Marowak/" />
+        <folder expanded="1" path="animation-folder/Muk/" />
+        <folder expanded="1" path="animation-folder/Nidoqueen/" />
+        <folder expanded="1" path="animation-folder/Ninetales/" />
+        <folder expanded="1" path="animation-folder/Pinsir/" />
+        <folder expanded="1" path="animation-folder/not_available/" />
+        <folder expanded="1" path="animation-folder/highlight/" />
+        <folder expanded="1" path="animation-folder/p1health/" />
+        <folder expanded="1" path="animation-folder/p2health/" />
+        <folder expanded="1" path="animation-folder/Raichu/" />
+        <folder expanded="1" path="animation-folder/Slowbro/" />
+        <folder expanded="1" path="animation-folder/Snorlax/" />
+        <folder expanded="1" path="animation-folder/Starmie/" />
+        <folder expanded="1" path="animation-folder/Tauros/" />
+        <folder expanded="1" path="animation-folder/Tentacruel/" />
+        <folder expanded="1" path="animation-folder/Vaporeon/" />
+        <folder expanded="1" path="animation-folder/ring/" />
+        <folder expanded="1" path="animation-folder/Clefable/" />
+        <folder expanded="1" path="animation-folder/Clefable_LQB/" />
+        <folder expanded="1" path="animation-folder/Golduck_LQB/" />
+        <folder expanded="1" path="animation-folder/Charizard_LCB/" />
+        <folder expanded="1" path="animation-folder/Hypno_LCB/" />
+        <folder expanded="1" path="animation-folder/Muk_LQB/" />
+        <folder expanded="1" path="animation-folder/Muk_LCB/" />
+        <folder expanded="1" path="animation-folder/Nidoqueen_LQB/" />
+        <folder expanded="1" path="animation-folder/Nidoqueen_LCB/" />
+        <folder expanded="1" path="animation-folder/Ninetales_CCB/" />
+        <folder expanded="1" path="animation-folder/Ninetales_LQB/" />
+        <folder expanded="1" path="animation-folder/Ninetales_LCB/" />
+        <folder expanded="1" path="animation-folder/Tauros_LQB/" />
+        <folder expanded="1" path="animation-folder/Tauros_LCB/" />
+        <folder expanded="1" path="animation-folder/Tentacruel_LQB/" />
+        <folder expanded="1" path="animation-folder/Tentacruel_LCB/" />
+        <folder expanded="1" path="animation-folder/Dewgong_LCB/" />
+        <folder expanded="1" path="animation-folder/Dewgong_LQB/" />
+        <folder expanded="1" path="animation-folder/Electabuzz_LCB/" />
+        <folder expanded="1" path="animation-folder/Electabuzz_LQB/" />
+        <folder expanded="1" path="animation-folder/Marowak_LQB/" />
+        <folder expanded="1" path="animation-folder/Marowak_LCB/" />
+        <folder expanded="1" path="animation-folder/Pinsir_LCB/" />
+        <folder expanded="1" path="animation-folder/Pinsir_LQB/" />
+        <folder expanded="1" path="animation-folder/Raichu_LCB/" />
+        <folder expanded="1" path="animation-folder/Snorlax_LQB/" />
+        <folder expanded="1" path="animation-folder/Snorlax_LCB/" />
+        <folder expanded="1" path="animation-folder/Starmie_LQB/" />
+        <folder expanded="1" path="animation-folder/Starmie_LCB/" />
+        <folder expanded="1" path="animation-folder/bg_winner/" />
+        <folder expanded="1" path="animation-folder/Vaporeon_LCB/" />
+        <folder expanded="1" path="animation-folder/cloud/" />
+        <folder expanded="1" path="animation-folder/game_over/" />
+        <folder expanded="1" path="animation-folder/mask/" />
+        <folder expanded="1" path="animation-folder/button_color1/" />
+        <folder expanded="1" path="animation-folder/bg_controls1/" />
+        <folder expanded="1" path="animation-folder/sprite_middle/" />
+        <folder expanded="1" path="animation-folder/bg_controls/" />
+        <folder expanded="1" path="animation-folder/arrow_left/" />
+        <folder expanded="1" path="animation-folder/arrow_right/" />
+        <folder expanded="1" path="animation-folder/Sprite/" />
+        <folder expanded="1" path="animation-folder/Sprite2/" />
+        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Sprite4/" />
+    </folders-expanded>
+</c2uistate>

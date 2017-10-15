@@ -1,0 +1,1128 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Selection_sheet</name>
+    <events>
+        <include>GenFunc_sheet</include>
+        <variable comment="the player currently selecting a pokemon" constant="0" name="player_num" sid="860021641355080" static="0" type="number">-1</variable>
+        <variable comment="start state" constant="0" name="state" sid="724585061370099" static="0" type="number">1</variable>
+        <variable constant="0" name="timer" sid="623491212158314" static="0" type="number">30</variable>
+        <event-block sid="645442566925686">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="1945602090001668" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="1316061337289602">
+                    <conditions />
+                    <actions>
+                        <action id="1" name="Set size" sid="7374095077467082" type="arr_p1ban">
+                            <param id="0" name="Width">0</param>
+                            <param id="1" name="Height">1</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                        <action id="1" name="Set size" sid="4900929053940891" type="arr_p1pick">
+                            <param id="0" name="Width">0</param>
+                            <param id="1" name="Height">1</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                        <action id="1" name="Set size" sid="280908792872337" type="arr_p2ban">
+                            <param id="0" name="Width">0</param>
+                            <param id="1" name="Height">1</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                        <action id="1" name="Set size" sid="7420697707023808" type="arr_p2pick">
+                            <param id="0" name="Width">0</param>
+                            <param id="1" name="Height">1</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                        <action id="1" name="Set size" sid="9986762572243239" type="arr_pokemonlist">
+                            <param id="0" name="Width">30</param>
+                            <param id="1" name="Height">1</param>
+                            <param id="2" name="Depth">1</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="4945059859463423" type="arr_pokemonlist">
+                            <param id="0" name="X">0</param>
+                            <param id="1" name="Value">&quot;Arbok&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="5059341671453291" type="arr_pokemonlist">
+                            <param id="0" name="X">1</param>
+                            <param id="1" name="Value">&quot;Arcanine&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="4475808557159389" type="arr_pokemonlist">
+                            <param id="0" name="X">2</param>
+                            <param id="1" name="Value">&quot;Blastoise&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7371879002631232" type="arr_pokemonlist">
+                            <param id="0" name="X">3</param>
+                            <param id="1" name="Value">&quot;Charizard&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="2172148204328058" type="arr_pokemonlist">
+                            <param id="0" name="X">4</param>
+                            <param id="1" name="Value">&quot;Clefable&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="8270166951489554" type="arr_pokemonlist">
+                            <param id="0" name="X">5</param>
+                            <param id="1" name="Value">&quot;Dewgong&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="5992287483302862" type="arr_pokemonlist">
+                            <param id="0" name="X">6</param>
+                            <param id="1" name="Value">&quot;Dragonair&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="2422522163384131" type="arr_pokemonlist">
+                            <param id="0" name="X">7</param>
+                            <param id="1" name="Value">&quot;Electabuzz&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="9783748542932168" type="arr_pokemonlist">
+                            <param id="0" name="X">8</param>
+                            <param id="1" name="Value">&quot;Golduck&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="1783484491224795" type="arr_pokemonlist">
+                            <param id="0" name="X">9</param>
+                            <param id="1" name="Value">&quot;Golem&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="3453068017674984" type="arr_pokemonlist">
+                            <param id="0" name="X">10</param>
+                            <param id="1" name="Value">&quot;Gyarados&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="6375768194682386" type="arr_pokemonlist">
+                            <param id="0" name="X">11</param>
+                            <param id="1" name="Value">&quot;Hypno&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="6401663160050898" type="arr_pokemonlist">
+                            <param id="0" name="X">12</param>
+                            <param id="1" name="Value">&quot;Jolteon&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="9602088460728139" type="arr_pokemonlist">
+                            <param id="0" name="X">13</param>
+                            <param id="1" name="Value">&quot;Machamp&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="84388489075928" type="arr_pokemonlist">
+                            <param id="0" name="X">14</param>
+                            <param id="1" name="Value">&quot;Magneton&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="394589944671728" type="arr_pokemonlist">
+                            <param id="0" name="X">15</param>
+                            <param id="1" name="Value">&quot;Marowak&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7488010212444711" type="arr_pokemonlist">
+                            <param id="0" name="X">16</param>
+                            <param id="1" name="Value">&quot;Muk&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="8620491140089104" type="arr_pokemonlist">
+                            <param id="0" name="X">17</param>
+                            <param id="1" name="Value">&quot;Nidoqueen&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="1704956918318458" type="arr_pokemonlist">
+                            <param id="0" name="X">18</param>
+                            <param id="1" name="Value">&quot;Ninetales&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7173973730528442" type="arr_pokemonlist">
+                            <param id="0" name="X">19</param>
+                            <param id="1" name="Value">&quot;Onix&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="2351308829667257" type="arr_pokemonlist">
+                            <param id="0" name="X">20</param>
+                            <param id="1" name="Value">&quot;Pinsir&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="1786334218544331" type="arr_pokemonlist">
+                            <param id="0" name="X">21</param>
+                            <param id="1" name="Value">&quot;Primeape&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="8888531842692159" type="arr_pokemonlist">
+                            <param id="0" name="X">22</param>
+                            <param id="1" name="Value">&quot;Raichu&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="4302324013306418" type="arr_pokemonlist">
+                            <param id="0" name="X">23</param>
+                            <param id="1" name="Value">&quot;Slowbro&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="2416417520626736" type="arr_pokemonlist">
+                            <param id="0" name="X">24</param>
+                            <param id="1" name="Value">&quot;Snorlax&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7793390701702323" type="arr_pokemonlist">
+                            <param id="0" name="X">25</param>
+                            <param id="1" name="Value">&quot;Starmie&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="3443254988688793" type="arr_pokemonlist">
+                            <param id="0" name="X">26</param>
+                            <param id="1" name="Value">&quot;Tauros&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7096193403072096" type="arr_pokemonlist">
+                            <param id="0" name="X">27</param>
+                            <param id="1" name="Value">&quot;Tentacruel&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="1780770094751233" type="arr_pokemonlist">
+                            <param id="0" name="X">28</param>
+                            <param id="1" name="Value">&quot;Vaporeon&quot;</param>
+                        </action>
+                        <action id="2" name="Set at X" sid="7818686628504294" type="arr_pokemonlist">
+                            <param id="0" name="X">29</param>
+                            <param id="1" name="Value">&quot;Vileplume&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="6662041943854537" type="Function">
+                            <param id="0" name="Name">&quot;setPokemonNames&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Call function" sid="622844425057124" type="Function">
+                            <param id="0" name="Name">&quot;setStartPosition&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Set text" sid="5832409443628706" type="txt_instruction">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                        </action>
+                        <action id="2" name="Stop" sid="8097835045157449" type="pokemon" />
+                        <action id="0" name="Play" sid="5395263262230615" type="Audio">
+                            <param id="0" name="Audio file">Selection_Sound</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;picking_sound&quot;</param>
+                        </action>
+                        <action id="2" name="Stop" sid="481784386608277" type="p1_picks" />
+                        <action id="2" name="Stop" sid="771692698693943" type="p2_picks" />
+                        <action id="2" name="Stop" sid="267085060873927" type="p_ban" />
+                        <action behavior="Flash" id="0" name="Flash" sid="190118200046129" type="highlight">
+                            <param id="0" name="&apos;On&apos; time">0.5</param>
+                            <param id="1" name="&apos;Off&apos; time">0.5</param>
+                            <param id="2" name="Duration">1080</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="546097139229983">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="423187722330932" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="196345305890916" type="info">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Call function" sid="947193174542496" type="Function">
+                    <param id="0" name="Name">&quot;get_playernum&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="5751615239928125">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2597049699012364" type="Mouse">
+                    <param id="0" name="Object">pokemon</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="222273452849087" type="info">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="7782993960773342" type="Function">
+                    <param id="0" name="Name">&quot;displayInfo1&quot;</param>
+                    <param id="1" name="Parameter {n}">pokemon.UID</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="941260970183893">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="747590071003828" type="Mouse">
+                    <param id="0" name="Object">p_ban</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="387062519431715" type="info">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="651032400700278" type="Function">
+                    <param id="0" name="Name">&quot;displayInfo2&quot;</param>
+                    <param id="1" name="Parameter {n}">p_ban.UID</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="245749320555418">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="346333065082474" type="Mouse">
+                    <param id="0" name="Object">p1_picks</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="869027260482727" type="info">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="669188925239945" type="Function">
+                    <param id="0" name="Name">&quot;displayInfo3&quot;</param>
+                    <param id="1" name="Parameter {n}">p1_picks.UID</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block any="1" sid="954230128011194">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="932807158803881" type="Mouse">
+                    <param id="0" name="Object">p2_picks</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="292894677011234" type="info">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="353985122745172" type="Function">
+                    <param id="0" name="Name">&quot;displayInfo4&quot;</param>
+                    <param id="1" name="Parameter {n}">p2_picks.UID</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Displays pokemon information when the mouse hovers over a pokemon</comment>
+        <event-block sid="892870653389546">
+            <conditions>
+                <condition id="0" name="On function" sid="368672378485209" type="Function">
+                    <param id="0" name="Name">&quot;displayInfo1&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="295240574517217">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="794252377131339" type="pokemon">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="953830893813168" type="info">
+                            <param id="0" name="Frame number">pokemon.AnimationFrame</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="472540923338102">
+            <conditions>
+                <condition id="0" name="On function" sid="238601323398099" type="Function">
+                    <param id="0" name="Name">&quot;displayInfo2&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="607488641588234">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="276289712932171" type="p_ban">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="917648048908556" type="info">
+                            <param id="0" name="Frame number">p_ban.AnimationFrame</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="723088562738283">
+            <conditions>
+                <condition id="0" name="On function" sid="245966585938699" type="Function">
+                    <param id="0" name="Name">&quot;displayInfo3&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="773009402388066">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="346653139654770" type="p1_picks">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="153608846395590" type="info">
+                            <param id="0" name="Frame number">p1_picks.AnimationFrame</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="524008277237592">
+            <conditions>
+                <condition id="0" name="On function" sid="930839113570959" type="Function">
+                    <param id="0" name="Name">&quot;displayInfo4&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="586914212399193">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="162242304308247" type="p2_picks">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="364962519800861" type="info">
+                            <param id="0" name="Frame number">p2_picks.AnimationFrame</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Ban a pokemon</comment>
+        <event-block any="1" sid="908064535368366">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="848084274878979" type="System">
+                    <param id="0" name="Variable">state</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="617501552285378" type="Function">
+                    <param id="0" name="Name">&quot;ban_generic&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="506683422475059">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="201404002788943" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="592246603085634" type="Audio">
+                            <param id="0" name="Audio file">Pokemon_ban</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="758562659372458">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="480155418546045" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pokemon</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="346606737097790" type="pokemon">
+                            <param id="0" name="Instance variable">banned</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="176109887122404" type="Function">
+                            <param id="0" name="Name">&quot;pushback_to_p&quot; &amp;player_num&amp;&quot;ban&quot;</param>
+                            <param id="1" name="Parameter {n}">pokemon.AnimationFrame</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="301284259350119" type="pokemon">
+                            <param id="0" name="Instance variable">banned</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="175059886559906" type="System">
+                            <param id="0" name="Object to create">p_ban</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">pokemon.startx</param>
+                            <param id="3" name="Y">pokemon.starty</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="311466055604556" type="p_ban">
+                            <param id="0" name="Frame number">pokemon.AnimationFrame</param>
+                        </action>
+                        <action id="2" name="Stop" sid="870066835606553" type="p_ban" />
+                        <action id="0" name="Call function" sid="823164578192926" type="Function">
+                            <param id="0" name="Name">&quot;ban_success&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="190848601761679">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="457376592911781" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="444642812421886" type="Function">
+                    <param id="0" name="Name">&quot;generic_func&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="633801314619276">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="216658605402691" type="System">
+                    <param id="0" name="Variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-7" name="Set size" sid="285945446922245" type="highlight">
+                    <param id="0" name="Width">55</param>
+                    <param id="1" name="Height">46</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Pick a pokemon</comment>
+        <event-block sid="778956549536614">
+            <conditions>
+                <condition id="-21" name="Is between values" sid="832711921936600" type="System">
+                    <param id="0" name="Value">state</param>
+                    <param id="1" name="Lower bound">7</param>
+                    <param id="2" name="Upper bound">18</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="999127020134381" type="Function">
+                    <param id="0" name="Name">&quot;pick_generic&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="994271605197677">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="778157738119124" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="561879890146278" type="Audio">
+                            <param id="0" name="Audio file">Pokemon_pick</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="264371338159395">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="153848934626544" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pokemon</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="114453528251931" type="pokemon">
+                            <param id="0" name="Instance variable">in_inventory</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="727796529777871" type="pokemon">
+                            <param id="0" name="Instance variable">banned</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="383529866180289" type="pokemon">
+                            <param id="0" name="Instance variable">not_available</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="837724636595706" type="Function">
+                            <param id="0" name="Name">&quot;pushback_to_p&quot; &amp;player_num&amp;&quot;pick&quot;</param>
+                            <param id="1" name="Parameter {n}">pokemon.AnimationFrame</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="396787633601773" type="pokemon">
+                            <param id="0" name="Instance variable">in_inventory</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="553106393569024">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="637803361115669" type="System">
+                                    <param id="0" name="Variable">player_num</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="304371094534375" type="System">
+                                    <param id="0" name="Object to create">p1_picks</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">pokemon.startx</param>
+                                    <param id="3" name="Y">pokemon.starty</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="763561953112822" type="p1_picks">
+                                    <param id="0" name="Frame number">pokemon.AnimationFrame</param>
+                                </action>
+                                <action id="2" name="Stop" sid="892153426299559" type="p1_picks" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="518121467580126">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="809523137822612" type="System">
+                                    <param id="0" name="Variable">player_num</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="155268331465931" type="System">
+                                    <param id="0" name="Object to create">p2_picks</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">pokemon.startx</param>
+                                    <param id="3" name="Y">pokemon.starty</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="236235257948257" type="p2_picks">
+                                    <param id="0" name="Frame number">pokemon.AnimationFrame</param>
+                                </action>
+                                <action id="2" name="Stop" sid="495581349392829" type="p2_picks" />
+                            </actions>
+                        </event-block>
+                        <event-block sid="553038109563125">
+                            <conditions />
+                            <actions>
+                                <action id="0" name="Call function" sid="389821281508658" type="Function">
+                                    <param id="0" name="Name">&quot;pick_success&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="343584999979352">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="941817730938930" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">pokemon</param>
+                        </condition>
+                        <condition id="-8" name="Is boolean instance variable set" sid="375692298487945" type="pokemon">
+                            <param id="0" name="Instance variable">not_available</param>
+                        </condition>
+                        <condition id="-8" inverted="1" name="Is boolean instance variable set" sid="517668866734742" type="pokemon">
+                            <param id="0" name="Instance variable">banned</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="409450224945331" type="Function">
+                            <param id="0" name="Name">&quot;not_available&quot;</param>
+                            <param id="1" name="Parameter {n}">pokemon.UID</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Redirect to Battle layout</comment>
+        <event-block sid="142599975276612">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="904071140811783" type="System">
+                    <param id="0" name="Variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">19</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="280587211094898" type="highlight">
+                    <param id="0" name="X">-20</param>
+                    <param id="1" name="Y">-20</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="667642586562295" type="System">
+                    <param id="0" name="Layout">Battle</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="994688813926690">
+            <conditions>
+                <condition id="0" name="On function" sid="868318373061094" type="Function">
+                    <param id="0" name="Name">&quot;get_playernum&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Set return value" sid="754688848616679" type="Function">
+                    <param id="0" name="Value">player_num</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="716533950635627">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="250597320532903" type="System">
+                            <param id="0" name="First value">state%2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="669757617664706" type="System">
+                            <param id="0" name="Variable">player_num</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="181594926448850">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="909938345563903" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="480294378300564" type="System">
+                            <param id="0" name="Variable">player_num</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="959759170729217">
+            <conditions>
+                <condition id="0" name="On function" sid="256891384814481" type="Function">
+                    <param id="0" name="Name">&quot;ban_generic&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="559811988701643" type="Function">
+                    <param id="0" name="Name">&quot;highlight_p&quot;&amp;player_num&amp;&quot;bancell&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Set text" sid="145277174124582" type="txt_instruction">
+                    <param id="0" name="Text">&quot;Player&quot; &amp; player_num &amp; &quot;, select 1 pokemon to ban&quot;</param>
+                </action>
+                <action id="-12" name="Set group active" sid="287468108155500" type="System">
+                    <param id="0" name="Group name">&quot;halt&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="0" name="Call function" sid="499598477387775" type="Function">
+                    <param id="0" name="Name">&quot;countdown&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="837995211208535">
+            <conditions>
+                <condition id="0" name="On function" sid="543415164188294" type="Function">
+                    <param id="0" name="Name">&quot;pick_generic&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="640179458362690" type="Function">
+                    <param id="0" name="Name">&quot;highlight_p&quot;&amp;player_num&amp;&quot;pickcell&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Set text" sid="756435533035728" type="txt_instruction">
+                    <param id="0" name="Text">&quot;Player&quot; &amp; player_num &amp; &quot;, select 1 pokemon&quot;</param>
+                </action>
+                <action id="-12" name="Set group active" sid="919601878805178" type="System">
+                    <param id="0" name="Group name">&quot;halt&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="0" name="Call function" sid="926218746074016" type="Function">
+                    <param id="0" name="Name">&quot;countdown&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="362100108949783">
+            <conditions>
+                <condition id="0" name="On function" sid="942322568337701" type="Function">
+                    <param id="0" name="Name">&quot;generic_func&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-12" name="Set group active" sid="926391896068645" type="System">
+                    <param id="0" name="Group name">&quot;halt&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="218345105356592" type="System">
+                    <param id="0" name="Seconds">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="203634308220609" type="System">
+                    <param id="0" name="Variable">state</param>
+                    <param id="1" name="Value">state+1</param>
+                </action>
+                <action id="-9" name="Set value" sid="262427722285021" type="System">
+                    <param id="0" name="Variable">timer</param>
+                    <param id="1" name="Value">30</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="470722232249455">
+            <conditions>
+                <condition id="0" name="On function" sid="249782788809690" type="Function">
+                    <param id="0" name="Name">&quot;pushback_to_p1ban&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Push" sid="578030564560746" type="arr_p1ban">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="611035175516041">
+            <conditions>
+                <condition id="0" name="On function" sid="119972860631159" type="Function">
+                    <param id="0" name="Name">&quot;pushback_to_p2ban&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Push" sid="950387738398529" type="arr_p2ban">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="946071666806472">
+            <conditions>
+                <condition id="0" name="On function" sid="448689380029959" type="Function">
+                    <param id="0" name="Name">&quot;pushback_to_p1pick&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Push" sid="254563612608005" type="arr_p1pick">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="716949872408072">
+            <conditions>
+                <condition id="0" name="On function" sid="211409608939919" type="Function">
+                    <param id="0" name="Name">&quot;pushback_to_p2pick&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Push" sid="490634312836298" type="arr_p2pick">
+                    <param id="0" name="Where">0</param>
+                    <param id="1" name="Value">Function.Param(0)</param>
+                    <param id="2" name="Axis">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="168976149309184">
+            <conditions>
+                <condition id="0" name="On function" sid="981797279405706" type="Function">
+                    <param id="0" name="Name">&quot;displayp1ban&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="938639373685302">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="749380540709945" type="arr_p1ban">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="679041034255810" type="p1ban_cell">
+                            <param id="0" name="Instance variable">Order</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">arr_p1ban.CurX</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="625418021905380" type="pokemon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">arr_p1ban.CurValue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="602930565556635" type="pokemon">
+                            <param id="0" name="Object">p1ban_cell</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="643860884887339" type="pokemon">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">p1ban_cell</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="131748920501102" type="pokemon">
+                            <param id="0" name="Width">36</param>
+                            <param id="1" name="Height">30</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="484597387147340">
+            <conditions>
+                <condition id="0" name="On function" sid="848196773516499" type="Function">
+                    <param id="0" name="Name">&quot;displayp2ban&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="485832782752922">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="688680490977712" type="arr_p2ban">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="449911612447074" type="p2ban_cell">
+                            <param id="0" name="Instance variable">Order</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">arr_p2ban.CurX</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="943568987710737" type="pokemon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">arr_p2ban.CurValue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="810438196142547" type="pokemon">
+                            <param id="0" name="Object">p2ban_cell</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="112631525038713" type="pokemon">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">p2ban_cell</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="435783646961744" type="pokemon">
+                            <param id="0" name="Width">36</param>
+                            <param id="1" name="Height">30</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="781083219094613">
+            <conditions>
+                <condition id="0" name="On function" sid="598893501453118" type="Function">
+                    <param id="0" name="Name">&quot;displayp1pick&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="123898557121638">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="633720676041156" type="arr_p1pick">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="234815771480426" type="p1pick_cell">
+                            <param id="0" name="Instance variable">Order</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">arr_p1pick.CurX</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="805867090228264" type="pokemon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">arr_p1pick.CurValue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="618736258859688" type="pokemon">
+                            <param id="0" name="Object">p1pick_cell</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="107503896409715" type="pokemon">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">p1pick_cell</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="540609260037250">
+            <conditions>
+                <condition id="0" name="On function" sid="621384858034322" type="Function">
+                    <param id="0" name="Name">&quot;displayp2pick&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="734776005635100">
+                    <conditions>
+                        <condition id="3" name="For each element" sid="213878394302700" type="arr_p2pick">
+                            <param id="0" name="Axes">2</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="857375200908492" type="p2pick_cell">
+                            <param id="0" name="Instance variable">Order</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">arr_p2pick.CurX</param>
+                        </condition>
+                        <condition id="3" name="Compare frame" sid="638271246373126" type="pokemon">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">arr_p2pick.CurValue</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="777827187400557" type="pokemon">
+                            <param id="0" name="Object">p2pick_cell</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="280715449128940" type="pokemon">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">p2pick_cell</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="832397403968722">
+            <conditions>
+                <condition id="0" name="On function" sid="631589090275948" type="Function">
+                    <param id="0" name="Name">&quot;ban_success&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="916374828634820" type="Function">
+                    <param id="0" name="Name">&quot;displayp&quot; &amp;player_num&amp; &quot;ban&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="948794426942166" type="Function">
+                    <param id="0" name="Name">&quot;generic_func&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="155910075260564">
+            <conditions>
+                <condition id="0" name="On function" sid="920415079057419" type="Function">
+                    <param id="0" name="Name">&quot;pick_success&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="982267051146788" type="Function">
+                    <param id="0" name="Name">&quot;displayp&quot; &amp;player_num&amp; &quot;pick&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="547801108089150" type="Function">
+                    <param id="0" name="Name">&quot;generic_func&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="846718337427597">
+            <conditions>
+                <condition id="0" name="On function" sid="135527132200152" type="Function">
+                    <param id="0" name="Name">&quot;not_available&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="370456777954780">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="761677699055214" type="pokemon">
+                            <param id="0" name="Unique ID">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="623340440292214">
+                            <conditions>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="403511850630997" type="System">
+                                    <param id="0" name="First value">not_available.X</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">pokemon.X</param>
+                                </condition>
+                                <condition id="-8" inverted="1" name="Compare two values" sid="423348336776681" type="System">
+                                    <param id="0" name="First value">not_available.Y</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">pokemon.Y</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="294012356203232" type="System">
+                                    <param id="0" name="Object to create">not_available</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">pokemon.startx</param>
+                                    <param id="3" name="Y">pokemon.starty</param>
+                                </action>
+                                <action id="-24" name="Move to top" sid="137981333377496" type="not_available" />
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="144527885111821">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="712914774647866">
+            <conditions>
+                <condition id="0" name="On function" sid="553142991278676" type="Function">
+                    <param id="0" name="Name">&quot;highlight_p1bancell&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="483802764364554">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="629461059945471" type="p1ban_cell">
+                            <param id="0" name="Instance variable">Order</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">floor((state-1)/2)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="601401825691191" type="highlight">
+                            <param id="0" name="Object">p1ban_cell</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="128480153328139" type="highlight">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">p1ban_cell</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="463448624542661">
+            <conditions>
+                <condition id="0" name="On function" sid="266467135582614" type="Function">
+                    <param id="0" name="Name">&quot;highlight_p2bancell&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="762030067946593">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="475364436053815" type="p2ban_cell">
+                            <param id="0" name="Instance variable">Order</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">floor((state-1)/2)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="961865008341841" type="highlight">
+                            <param id="0" name="Object">p2ban_cell</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="422725102831110" type="highlight">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">p2ban_cell</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="813361185315935">
+            <conditions>
+                <condition id="0" name="On function" sid="572575971445581" type="Function">
+                    <param id="0" name="Name">&quot;highlight_p1pickcell&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="524321065586545">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="918519999169738" type="p1pick_cell">
+                            <param id="0" name="Instance variable">Order</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">floor((state-7)/2)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="933114002661457" type="highlight">
+                            <param id="0" name="Object">p1pick_cell</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="797291486816539" type="highlight">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">p1pick_cell</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="962960070104438">
+            <conditions>
+                <condition id="0" name="On function" sid="740010770583757" type="Function">
+                    <param id="0" name="Name">&quot;highlight_p2pickcell&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="520212109109636">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="546289341726056" type="p2pick_cell">
+                            <param id="0" name="Instance variable">Order</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">floor((state-7)/2)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="208441366752896" type="highlight">
+                            <param id="0" name="Object">p2pick_cell</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-29" name="Move to object" sid="342501138279859" type="highlight">
+                            <param id="0" name="Where">0</param>
+                            <param id="1" name="Object">p2pick_cell</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

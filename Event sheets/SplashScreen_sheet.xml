@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>SplashScreen_sheet</name>
+    <events>
+        <event-block sid="620505577014078">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="984681700634137" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="425570885378606" type="Audio">
+                    <param id="0" name="Audio file">Appear_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="372949318636039">
+            <conditions>
+                <condition id="-7" name="Compare time" sid="317393640536030" type="System">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Time (seconds)">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="302026107709880" type="Sprite3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Play" sid="427896953173433" type="Audio">
+                    <param id="0" name="Audio file">Undef_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="399702693178850">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="777077805516567" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="981629279559084" type="System">
+                    <param id="0" name="Seconds">7</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="994307967483474" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="814764913244825">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="964328507405382" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="794949342951272" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="182587528285556">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="858534593016472" type="System" />
+            </conditions>
+            <actions>
+                <action id="-1" name="Set X" sid="644381338176471" type="Sprite4">
+                    <param id="0" name="X">Sprite4.X + (dt*400)</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

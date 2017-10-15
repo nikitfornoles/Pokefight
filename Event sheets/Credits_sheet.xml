@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Credits_sheet</name>
+    <events>
+        <variable constant="0" name="distance_maskC13" sid="122249465942229" static="0" type="number">-1</variable>
+        <variable constant="0" name="credits_state" sid="618990570144223" static="0" type="number">0</variable>
+        <event-block sid="533404984073036">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="764002167291171" type="System" />
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="874654734066734" type="Audio" />
+                <action id="0" name="Set text" sid="342712254886078" type="txt_credits7">
+                    <param id="0" name="Text">&quot;Jon Ray Favorito&#x0D;&#x0A;Kyle Francis Boclot&#x0D;&#x0A;Ramher Pangindian&#x0D;&#x0A;Maria Michaela Lorenzo&#x0D;&#x0A;Keith Romer Aguilar&#x0D;&#x0A;Michael John Ambait&#x0D;&#x0A;Justin Ryan Ayubo&#x0D;&#x0A;Arnold Thaddaeous Balane&#x0D;&#x0A;Rowell Barranda&#x0D;&#x0A;Mikka Angela Bautista&#x0D;&#x0A;Angelica Brioso&#x0D;&#x0A;Nuelyn Jam Decena&#x0D;&#x0A;Mark Jonathan Gerundio&#x0D;&#x0A;Chris Lawrence Imperial&#x0D;&#x0A;Celeste Lapaz&#x0D;&#x0A;Jan Kevin Lim&#x0D;&#x0A;Patrick Angelo Llesol&#x0D;&#x0A;Anrew Paulo Mojar&#x0D;&#x0A;Princess Alyzon Nueles&#x0D;&#x0A;Jan Carl Pilapil&#x0D;&#x0A;Mark Dominic Pili&#x0D;&#x0A;Nery Angeli Prima&#x0D;&#x0A;Den Mark Remalla&#x0D;&#x0A;Carl Ferddie Sabater&#x0D;&#x0A;Patrick Torres&#x0D;&#x0A;Maurice Vales&#x0D;&#x0A;&quot;</param>
+                </action>
+                <action id="0" name="Play" sid="511628857493322" type="Audio">
+                    <param id="0" name="Audio file">Credits_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-24" name="Move to top" sid="733080418640390" type="mask" />
+                <action id="-2" name="Set Y" sid="275590111043200" type="CreditsFamily">
+                    <param id="0" name="Y">CreditsFamily.Y+350</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="455106597373069">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4381667222066704" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">txt_Back</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2495061773340593" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="130952649339705">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="621230575507947" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="310508543259561" type="System">
+                    <param id="0" name="Variable">distance_maskC13</param>
+                    <param id="1" name="Value">mask.Y-txt_credits13.Y</param>
+                </action>
+                <action id="-2" name="Set Y" sid="371304692505996" type="CreditsFamily">
+                    <param id="0" name="Y">CreditsFamily.Y - (dt*50)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="263236894319174">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="173271597267982" type="System">
+                            <param id="0" name="Variable">distance_maskC13</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="536623348963115" type="button_color">
+                            <param id="0" name="X">423</param>
+                            <param id="1" name="Y">400</param>
+                        </action>
+                        <action id="-4" name="Set position to another object" sid="760047847435041" type="txt_Back">
+                            <param id="0" name="Object">button_color</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                        <action id="-24" name="Move to top" sid="691583985551088" type="txt_Back" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

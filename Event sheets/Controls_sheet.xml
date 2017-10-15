@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Controls_sheet</name>
+    <events>
+        <variable constant="0" name="controls_state" sid="452529410578477" static="0" type="number">0</variable>
+        <event-block sid="214539651916324">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="756556695621656" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="486760984337774" type="Controls_Variable">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="979468619361637" type="System">
+                    <param id="0" name="Variable">controls_state</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="320523401003210">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="560615585763457" type="System">
+                    <param id="0" name="Variable">controls_state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="271495031802784" type="Function">
+                    <param id="0" name="Name">&quot;Movement_Controls&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="479594638306150">
+            <conditions>
+                <condition id="0" name="On function" sid="832915032668555" type="Function">
+                    <param id="0" name="Name">&quot;Movement_Controls&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="210425785127844" type="txt_controlsTitle">
+                    <param id="0" name="Text">&quot;Movement&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="653659809360408" type="arrow_left">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="891876694028198" type="txt_p1_1">
+                    <param id="0" name="Text">&quot;A&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="213882574735712" type="txt_p1_2">
+                    <param id="0" name="Text">&quot;D&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="909245117587330" type="txt_p1_3">
+                    <param id="0" name="Text">&quot;W&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="185586625197736" type="txt_p1_4">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="872203462791952" type="txt_action1">
+                    <param id="0" name="Text">&quot;move left&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="554134400496105" type="txt_action2">
+                    <param id="0" name="Text">&quot;move right&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="973231760829176" type="txt_action3">
+                    <param id="0" name="Text">&quot;jump&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="356066105469213" type="txt_action4">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="697370172821485" type="txt_p2_1">
+                    <param id="0" name="Text">&quot;Left Arrow Key&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="366901402009558" type="txt_p2_2">
+                    <param id="0" name="Text">&quot;Right Arrow Key&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="792286608051285" type="txt_p2_3">
+                    <param id="0" name="Text">&quot;Up Arrow Key&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="168464920728916" type="txt_p2_4">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="532937276447531">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="872268144634494" type="System">
+                    <param id="0" name="Variable">controls_state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="319092193690838" type="Function">
+                    <param id="0" name="Name">&quot;Attack_Controls&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="578875470858049">
+            <conditions>
+                <condition id="0" name="On function" sid="531865309019887" type="Function">
+                    <param id="0" name="Name">&quot;Attack_Controls&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="853190056708550" type="txt_controlsTitle">
+                    <param id="0" name="Text">&quot;Attack&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="777691450060996" type="arrow_left">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="392886514648190" type="arrow_right">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Set text" sid="466035088098250" type="txt_p1_1">
+                    <param id="0" name="Text">&quot;Z&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="394132630083593" type="txt_p1_2">
+                    <param id="0" name="Text">&quot;X&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="670436861109845" type="txt_p1_3">
+                    <param id="0" name="Text">&quot;C&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="419729087648473" type="txt_p1_4">
+                    <param id="0" name="Text">&quot;V&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="822969563351448" type="txt_action1">
+                    <param id="0" name="Text">&quot;close range quick&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="119374679596349" type="txt_action2">
+                    <param id="0" name="Text">&quot;close range charge&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="346674454486396" type="txt_action3">
+                    <param id="0" name="Text">&quot;long range quick&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="485676438857354" type="txt_action4">
+                    <param id="0" name="Text">&quot;long range charge&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="358265273735574" type="txt_p2_1">
+                    <param id="0" name="Text">&quot;O&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="338786326731792" type="txt_p2_2">
+                    <param id="0" name="Text">&quot;P&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="619610820912343" type="txt_p2_3">
+                    <param id="0" name="Text">&quot;K&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="995947272128384" type="txt_p2_4">
+                    <param id="0" name="Text">&quot;L&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="686963160233711">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="713947133309893" type="System">
+                    <param id="0" name="Variable">controls_state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="148801413784092" type="Function">
+                    <param id="0" name="Name">&quot;Switch_Controls&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="249341785981186">
+            <conditions>
+                <condition id="0" name="On function" sid="626495208298041" type="Function">
+                    <param id="0" name="Name">&quot;Switch_Controls&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="411639456184154" type="txt_controlsTitle">
+                    <param id="0" name="Text">&quot;Switch&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="652615202834270" type="arrow_right">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Set text" sid="839257412492189" type="txt_p1_1">
+                    <param id="0" name="Text">&quot;Q&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="252404189394445" type="txt_p1_2">
+                    <param id="0" name="Text">&quot;Space bar&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="243417772344363" type="txt_p1_3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="342357879699367" type="txt_p1_4">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="153687108253939" type="txt_action1">
+                    <param id="0" name="Text">&quot;display options&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="287219194226365" type="txt_action2">
+                    <param id="0" name="Text">&quot;switch pokemon&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="603453244745409" type="txt_action3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="428653649224082" type="txt_action4">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="521538215896076" type="txt_p2_1">
+                    <param id="0" name="Text">&quot;PgUp&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="886031077203545" type="txt_p2_2">
+                    <param id="0" name="Text">&quot;PgDn&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="652427487066153" type="txt_p2_3">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="522866467316013" type="txt_p2_4">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="787985365122060">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="201671251363351" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">arrow_right</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="997398009418395" type="System">
+                    <param id="0" name="Variable">controls_state</param>
+                    <param id="1" name="Comparison">3</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="286504671360419" type="System">
+                    <param id="0" name="Variable">controls_state</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="386801859320734" type="Audio">
+                    <param id="0" name="Audio file">Click_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="155119679868835">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="641911603202019" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">arrow_left</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="322448409400060" type="System">
+                    <param id="0" name="Variable">controls_state</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="239165472167270" type="System">
+                    <param id="0" name="Variable">controls_state</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Play" sid="823404311376645" type="Audio">
+                    <param id="0" name="Audio file">Click_Sound</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="567010379261257">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="320844523814151" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">icon_exit</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="596465984814003" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

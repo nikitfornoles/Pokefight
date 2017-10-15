@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>GenFunc_sheet</name>
+    <events>
+        <event-block sid="186438977263978">
+            <conditions>
+                <condition id="0" name="On function" sid="646643209141792" type="Function">
+                    <param id="0" name="Name">&quot;setPokemonNames&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="920575497995008">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="824275447617440" type="System">
+                            <param id="0" name="Object">pokemon</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="896616427102214" type="pokemon">
+                            <param id="0" name="Instance variable">name</param>
+                            <param id="1" name="Value">arr_pokemonlist.At(pokemon.AnimationFrame)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>The function that need not continue when a player had selected a pokemon</comment>
+        <event-group description="" sid="989540633898938" title="halt">
+            <sub-events>
+                <comment>Displays the countdown timer for banning or picking a pokemon</comment>
+            </sub-events>
+        </event-group>
+        <event-block sid="515514975394259">
+            <conditions>
+                <condition id="0" name="On function" sid="972906578786335" type="Function">
+                    <param id="0" name="Name">&quot;countdown&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="345619655476494">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="517671385640211" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="941836408483494">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="311496896889126" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="261200883506607" type="txt_timer">
+                                    <param id="0" name="Text">&quot;STOP&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="319357498612888" type="txt_instruction">
+                                    <param id="0" name="Text">&quot;&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="531423219399115">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="236415601701278" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="811621769589226" type="txt_timer">
+                                    <param id="0" name="Text">&quot;&quot; &amp; timer</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="690002004359168">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="688471646678470" type="System">
+                                            <param id="0" name="Variable">timer</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">5</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="650106675370370" type="Audio">
+                                            <param id="0" name="Audio file">cd_five</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="710906688181119">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="471451352775828" type="System">
+                                            <param id="0" name="Variable">timer</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">10</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Play" sid="485971029076113" type="Audio">
+                                            <param id="0" name="Audio file">cd_ten</param>
+                                            <param id="2" name="Loop">0</param>
+                                            <param id="3" name="Volume">0</param>
+                                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="135619655666083">
+                            <conditions />
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="710820443715994" type="System">
+                                    <param id="0" name="Variable">timer</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="225891621023487">
+                    <conditions />
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="579211747901363">
+            <conditions>
+                <condition id="0" name="On function" sid="406753510872021" type="Function">
+                    <param id="0" name="Name">&quot;setStartPosition&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="144442134214382" type="pokemon">
+                    <param id="0" name="Instance variable">startx</param>
+                    <param id="1" name="Value">Self.X</param>
+                </action>
+                <action id="-10" name="Set value" sid="232948817970159" type="pokemon">
+                    <param id="0" name="Instance variable">starty</param>
+                    <param id="1" name="Value">Self.Y</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

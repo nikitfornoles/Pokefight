@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the event sheet was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <show-addaction-links>1</show-addaction-links>
+    <scroll-pos>2266</scroll-pos>
+    <conditions-column>335</conditions-column>
+    <actions-namecolumn>112</actions-namecolumn>
+    <condition-namecolumns>
+        <nest>120</nest>
+        <nest>119</nest>
+        <nest>110</nest>
+        <nest>114</nest>
+        <nest>119</nest>
+        <nest>18</nest>
+        <nest>18</nest>
+        <nest>18</nest>
+        <nest>18</nest>
+        <nest>18</nest>
+        <nest>18</nest>
+        <nest>18</nest>
+        <nest>18</nest>
+        <nest>16</nest>
+    </condition-namecolumns>
+    <events>
+        <event collapsed="1" sid="807166514334496" />
+        <event collapsed="1" sid="482274904528805" />
+        <event collapsed="1" sid="757788445753301" />
+        <event collapsed="1" sid="523846776947592" />
+        <event collapsed="1" sid="508049922510810" />
+        <event collapsed="1" sid="192626042586589" />
+        <event collapsed="1" sid="560711576773132" />
+        <event collapsed="1" sid="754654347053594" />
+        <event collapsed="1" sid="148958159426578" />
+        <event collapsed="1" sid="806532836064215" />
+        <event collapsed="1" sid="317502120819867" />
+        <event collapsed="1" sid="137111481043567" />
+        <event collapsed="1" sid="637575895080156" />
+        <event collapsed="1" sid="188573947610371" />
+        <event collapsed="1" sid="511556309321452" />
+        <event collapsed="1" sid="516754089133185" />
+        <event collapsed="1" sid="584039637280137" />
+        <event collapsed="1" sid="949452110457608" />
+        <event collapsed="1" sid="297435100771335" />
+        <event collapsed="1" sid="817062782033731" />
+        <event collapsed="1" sid="978636060289211" />
+        <event collapsed="1" sid="792102413113576" />
+        <event collapsed="1" sid="205177037435736" />
+        <event collapsed="1" sid="383238170097725" />
+        <event collapsed="1" sid="955519491389313" />
+        <event collapsed="1" sid="419292189926778" />
+        <event collapsed="1" sid="974750034541334" />
+        <event collapsed="1" sid="886954264126672" />
+        <event collapsed="1" sid="416043039394580" />
+        <event collapsed="1" sid="692438641376834" />
+        <event collapsed="1" sid="358847084553190" />
+        <event collapsed="1" sid="433585556634327" />
+        <event collapsed="1" sid="964746681443937" />
+        <event collapsed="1" sid="888292516954640" />
+        <event collapsed="1" sid="873867955330102" />
+        <event collapsed="1" sid="307022127271632" />
+        <event collapsed="1" sid="611972932438322" />
+        <event collapsed="1" sid="995809551553422" />
+        <event collapsed="1" sid="403638174940280" />
+        <event collapsed="1" sid="530942797501590" />
+        <event collapsed="1" sid="133097568765762" />
+        <event collapsed="1" sid="254173057753339" />
+        <event collapsed="1" sid="983454394997529" />
+        <event collapsed="1" sid="907679333082403" />
+        <event collapsed="1" sid="362041964128284" />
+        <event collapsed="1" sid="289823367496772" />
+        <event collapsed="1" sid="524924188182689" />
+        <event collapsed="1" sid="370360371793496" />
+        <event collapsed="1" sid="665186526251568" />
+        <event collapsed="1" sid="518190561151866" />
+        <event collapsed="1" sid="250355242921525" />
+        <event collapsed="1" sid="926893276187805" />
+        <event collapsed="1" sid="607839980674912" />
+        <event collapsed="1" sid="861458019575716" />
+        <event collapsed="1" sid="605057915154247" />
+        <event collapsed="1" sid="988428448315872" />
+        <event collapsed="1" sid="534679010732368" />
+        <event collapsed="1" sid="961200309552649" />
+        <event collapsed="1" sid="130748889036700" />
+        <event collapsed="1" sid="403991026497017" />
+        <event collapsed="1" sid="974286316849501" />
+        <event collapsed="1" sid="574918855692496" />
+        <event collapsed="1" sid="337303255736031" />
+        <event collapsed="1" sid="572649514134556" />
+        <event collapsed="1" sid="758360038104319" />
+        <event collapsed="1" sid="688014269425595" />
+        <event collapsed="1" sid="709263688713876" />
+        <event collapsed="1" sid="898996330077214" />
+        <event collapsed="1" sid="284469491360764" />
+    </events>
+</c2uistate>
